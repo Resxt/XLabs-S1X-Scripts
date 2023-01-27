@@ -142,7 +142,7 @@ set mapvote_maps "Ascend:Bio Lab:Comeback:Defender:Detroit:Greenband:Horizon:Ins
 set mapvote_modes "Team Deathmatch,war:Domination,dom"
 set mapvote_limits_maps 0
 set mapvote_limits_modes 0
-set mapvote_limits_max 12
+set mapvote_limits_max 11
 set mapvote_colors_selected "blue"
 set mapvote_colors_unselected "white"
 set mapvote_colors_timer "blue"
