@@ -54,7 +54,7 @@ Here are the dvars you can configure:
 | mapvote_enable | Toggle whether the mapvote is activated or not. 0 is off and 1 is on | 0 | 0 or 1 |
 | mapvote_debug | Toggle whether the mapvote runs in debug mode or not. This will display the mapvote menu a few seconds after starting the game. 0 is off and 1 is on | 0 | 0 or 1 |
 | mapvote_maps | A list of the maps that are available for rotation | Every maps including DLC maps | Any map name. Each map is separated with a colon (:) |
-| mapvote_modes | A list of the modes that are available for rotation. The first parameter is how the mode will be displayed, it can be set to anything you like, the second parameter is the name of the cfg file to load | "Team Deathmatch,war:Domination,dom" | Any text followed by a comma (,) and then the cfg name. Each block is separated with a colon (:) |
+| mapvote_modes | A list of the modes that are available for rotation. The first parameter is how the mode will be displayed, it can be set to anything you like, the second parameter is the name of the gametype | "Team Deathmatch,war:Domination,dom:Hardpoint,hp" | Any text followed by a comma (,) and then the cfg name. Each block is separated with a colon (:) |
 | mapvote_limits_maps | The amount of maps to display. 0 will handle it automatically | 0 | Any plain number from 0 to `mapvote_limits_max` |
 | mapvote_limits_modes | The amount of modes to display. 0 will handle it automatically | 0 | Any plain number from 0 to `mapvote_limits_max` |
 | mapvote_limits_max | The maximum amount of elements to display (maps + modes) | 11 | Any plain number |
@@ -139,7 +139,7 @@ The values you see are the default values that will be used if you don't set a d
   ```c
 set mapvote_enable 1
 set mapvote_maps "Ascend:Bio Lab:Comeback:Defender:Detroit:Greenband:Horizon:Instinct:Recovery:Retreat:Riot:Solar:Terrace:Atlas Gorge:Chop Shop:Climate:Compound:Core:Drift:Fracture:Kremlin:Overload:Parliament:Perplex:Quarantine:Sideshow:Site 244:Skyrise:Swarm:Urban"
-set mapvote_modes "Team Deathmatch,war:Domination,dom"
+set mapvote_modes "Team Deathmatch,war:Domination,dom:Hardpoint,hp"
 set mapvote_limits_maps 0
 set mapvote_limits_modes 0
 set mapvote_limits_max 11
@@ -166,7 +166,7 @@ Here are some pre-set values if you want to quickly copy/paste something
 |---|---|
 | All base game maps | "Ascend:Bio Lab:Comeback:Defender:Detroit:Greenband:Horizon:Instinct:Recovery:Retreat:Riot:Solar:Terrace" |
 | All DLC maps | "Atlas Gorge:Chop Shop:Climate:Compound:Core:Drift:Fracture:Kremlin:Overload:Parliament:Perplex:Quarantine:Sideshow:Site 244:Skyrise:Swarm:Urban" |
-| Classic modes | "Team Deathmatch,tdm:Domination,dom:Hardpoint,koth" |
+| Classic modes | "Team Deathmatch,tdm:Domination,dom:Hardpoint,hp" |
 | Alternative modes | "Kill Confirmed,conf:Capture the Flag,ctf" |
 | FFA 24/7 | "Free for All,dm" |
 | SND 24/7 | "Search & Destroy,sd" |

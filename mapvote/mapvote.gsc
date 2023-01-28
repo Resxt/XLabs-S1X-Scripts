@@ -54,7 +54,7 @@ InitDvars()
     if (GetMode() == "multiplayer")
     {
         SetDvarIfNotInitialized("mapvote_maps", "Ascend:Bio Lab:Comeback:Defender:Detroit:Greenband:Horizon:Instinct:Recovery:Retreat:Riot:Solar:Terrace:Atlas Gorge:Chop Shop:Climate:Compound:Core:Drift:Fracture:Kremlin:Overload:Parliament:Perplex:Quarantine:Sideshow:Site 244:Skyrise:Swarm:Urban");
-        SetDvarIfNotInitialized("mapvote_modes", "Team Deathmatch,war:Domination,dom");
+        SetDvarIfNotInitialized("mapvote_modes", "Team Deathmatch,war:Domination,dom:Hardpoint,hp");
         SetDvarIfNotInitialized("mapvote_limits_maps", 0);
         SetDvarIfNotInitialized("mapvote_limits_modes", 0);
         SetDvarIfNotInitialized("mapvote_limits_max", 11);
