@@ -57,7 +57,7 @@ InitDvars()
         SetDvarIfNotInitialized("mapvote_modes", "Team Deathmatch,war:Domination,dom:Hardpoint,hp");
         SetDvarIfNotInitialized("mapvote_limits_maps", 0);
         SetDvarIfNotInitialized("mapvote_limits_modes", 0);
-        SetDvarIfNotInitialized("mapvote_limits_max", 11);
+        SetDvarIfNotInitialized("mapvote_limits_max", 10);
         SetDvarIfNotInitialized("mapvote_default_rotation_maps", "Detroit:Greenband:Terrace");
         SetDvarIfNotInitialized("mapvote_default_rotation_modes", "tdm");
     }

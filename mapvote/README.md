@@ -21,7 +21,7 @@ This works for both custom games and dedicated servers.
 
 ### Main features
 
-- It allows up to 11 elements (maps + modes) to be displayed on screen
+- It allows up to 10 elements (maps + modes) to be displayed on screen
 - You can configure how much maps and modes you want on screen
 - It will automatically adapt the amount of elements to display if you don't choose a fixed amount of maps/modes to show
 - It has separate map and mode choices for multiplayer
@@ -57,7 +57,7 @@ Here are the dvars you can configure:
 | mapvote_modes | A list of the modes that are available for rotation. The first parameter is how the mode will be displayed, it can be set to anything you like, the second parameter is the name of the gametype | "Team Deathmatch,war:Domination,dom:Hardpoint,hp" | Any text followed by a comma (,) and then the cfg name. Each block is separated with a colon (:) |
 | mapvote_limits_maps | The amount of maps to display. 0 will handle it automatically | 0 | Any plain number from 0 to `mapvote_limits_max` |
 | mapvote_limits_modes | The amount of modes to display. 0 will handle it automatically | 0 | Any plain number from 0 to `mapvote_limits_max` |
-| mapvote_limits_max | The maximum amount of elements to display (maps + modes) | 11 | Any plain number |
+| mapvote_limits_max | The maximum amount of elements to display (maps + modes) | 10 | Any plain number |
 | mapvote_colors_selected | The color of the text when hovered or selected. This is also the color of the votes count | blue | red, green, yellow, blue, cyan, purple, white, grey, gray, black |
 | mapvote_colors_unselected | The color of the text when not hovered and not selected | white | red, green, yellow, blue, cyan, purple, white, grey, gray, black |
 | mapvote_colors_timer | The color of the timer as long as it has more than 5 seconds remaining | blue | red, green, yellow, blue, cyan, purple, white, grey, gray, black |
@@ -142,7 +142,7 @@ set mapvote_maps "Ascend:Bio Lab:Comeback:Defender:Detroit:Greenband:Horizon:Ins
 set mapvote_modes "Team Deathmatch,war:Domination,dom:Hardpoint,hp"
 set mapvote_limits_maps 0
 set mapvote_limits_modes 0
-set mapvote_limits_max 11
+set mapvote_limits_max 10
 set mapvote_colors_selected "blue"
 set mapvote_colors_unselected "white"
 set mapvote_colors_timer "blue"
