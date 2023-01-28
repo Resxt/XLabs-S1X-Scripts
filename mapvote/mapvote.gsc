@@ -406,7 +406,7 @@ CreateVoteMenu()
             }
         }
 
-        player CreateHudText(buttonsHelpMessage, level.mapvote_hud_font, level.mapvote_hud_fontscale, "CENTER", "CENTER", 0, 210); 
+        player.mapvote["help_message_hud"] = player CreateHudText(buttonsHelpMessage, level.mapvote_hud_font, level.mapvote_hud_fontscale, "CENTER", "CENTER", 0, 210); 
     }
 }
 
@@ -686,6 +686,29 @@ DoRotation(modeName, mapName)
     {
         SetDvar("sv_maprotationcurrent", "gametype " + modeName + " map " + mapName);
         SetDvar("sv_maprotation", "gametype " + modeName + " map " + mapName);
+
+        types = ["map", "mode"];
+        
+        foreach (type in types)
+        {
+            foreach (index in GetArrayKeys(level.mapvote["hud"][type + "s"]))
+            {
+                level.mapvote["hud"][type + "s"][index] destroy();
+            }
+        }
+
+        foreach (player in GetHumanPlayers())
+        {
+            foreach (type in types)
+            {
+                foreach (index in GetArrayKeys(player.mapvote[type]))
+                {
+                    player.mapvote[type][index]["hud"] destroy();
+                }
+            }
+
+            player.mapvote["help_message_hud"] destroy();
+        }
     }
     else // custom games
     {
